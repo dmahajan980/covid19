@@ -1,0 +1,26 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "A command-line interface to check the current statistics of COVID-19 in a particular country, state, or region.",
+  "main": "covid19.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmahajan980/covid19.git"
+  },
+  "author": "Divyanshu Mahajan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmahajan980/covid19/issues"
+  },
+  "homepage": "https://github.com/dmahajan980/covid19#readme",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "js-beautify": "^1.10.3"
+  }
+}
