@@ -17,7 +17,13 @@
   },
   "homepage": "https://github.com/dmahajan980/covid19#readme",
   "dependencies": {
+    "chalk": "^3.0.0",
+    "cli-cursor": "^3.1.0",
+    "cli-spinner": "^0.2.10",
+    "cli-table3": "^0.5.1",
     "commander": "^5.0.0",
+    "ervy": "^1.0.7",
+    "i18n-iso-countries": "^5.1.0",
     "request": "^2.88.2"
   },
   "devDependencies": {
