@@ -1,6 +1,7 @@
 const program = require('commander'),
     request = require('request'),
     Table = require('cli-table3'),
+    ervy = require('ervy'),
     Spinner = require('cli-spinner').Spinner,
     cursor = require('cli-cursor'),
     chalk = require('chalk'),
@@ -20,13 +21,18 @@ program
     .description('Returns the COVID-19 statistics')
     .usage('stats [options]')
     .action(() => {
+
         cursor.hide();
         let spinner = new Spinner(chalk.rgb(74, 177, 248)('%s'));
         spinner.setSpinnerString(18);
         spinner.start();
 
+        let dateTime = new Date(Date.now());
+        dateTime.setDate(dateTime.getDate() - 1);
+        const date = ((dateTime.getMonth() + 1) + '/' + dateTime.getDate() + '/' + dateTime.getFullYear().toString().substr(2, 2)).toString();
+
         const configuration = {
-            url: 'https://covidapi.info/api/v1/global',
+            url: `https://covid-19-report-api.now.sh/api/v1/cases/brief/timeseries`,
             json: true
         };
 
@@ -38,11 +44,14 @@ program
                 return spinner.stop();
             }
 
+            const data = response.body.data;
+            console.log(data)
+
             const { 
                     confirmed,
                     deaths,
                     recovered 
-                } = response.body.result,
+                } = data[date],
                 country = 'Worldwide';
 
             let table = new Table({
@@ -55,6 +64,8 @@ program
                 [ chalk.bold.green('Recovered'), chalk.whiteBright.bold(recovered) ]
             );
             console.log(table.toString());
+
+            const { scatter } = ervy;
 
             spinner.stop();
             cursor.show();
