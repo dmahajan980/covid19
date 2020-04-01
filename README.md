@@ -1,5 +1,7 @@
 # COVID-19 CLI
 
+<img src="https://badges.frapsoft.com/os/v1/open-source.png?v=103"> <a href="LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/dmahajan980/covid19"></a>
+
 A command-line interface to check the current statistics of COVID-19 of the world or a particular country.
 
 ## TABLE OF CONTENTS
