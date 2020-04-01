@@ -24,10 +24,10 @@ const getStats = country => {
 
         if (error) {
             console.error(chalk.bold.red('Unable to connect :('));
-            hideLoader();
+            return hideLoader();
         }
 
-        const data = response.body.data,
+        const data = countryName === 'Worldwide' ? response.body.data : response.body.data[0].timeseries,
             latestDateAvailable = data[date] ? date : prevDate;
 
         const {
