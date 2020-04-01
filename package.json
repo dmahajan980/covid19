@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A command-line interface to check the current statistics of COVID-19 in a particular country, state, or region.",
   "main": "covid19.js",
+  "preferGlobal": true,
+  "bin": "./covid19.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +24,6 @@
     "cli-spinner": "^0.2.10",
     "cli-table3": "^0.5.1",
     "commander": "^5.0.0",
-    "ervy": "^1.0.7",
     "i18n-iso-countries": "^5.1.0",
     "request": "^2.88.2",
     "validator": "^13.0.0"

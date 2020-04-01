@@ -1,5 +1,6 @@
+#!/usr/bin/env node
+
 const program = require('commander'),
-    ervy = require('ervy'),
     getStats = require('./src/getStats'),
     {
         version,
