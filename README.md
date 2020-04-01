@@ -1,6 +1,6 @@
 # COVID-19 CLI
 
-A command-line interface to check the current statistics of COVID-19 in a particular country, state, or region.
+A command-line interface to check the current statistics of COVID-19 of the world or a particular country.
 
 ## TABLE OF CONTENTS
 1. [Getting Started](#getting-started)
