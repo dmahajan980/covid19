@@ -38,7 +38,7 @@ const getStats = country => {
             active = confirmed - deaths - recovered;
 
         let table = new Table({
-            head: [chalk.bold.yellowBright(countryName), chalk.bold.yellowBright('No of Cases')]
+            head: [chalk.bold.yellowBright(countryName.toUpperCase()), chalk.bold.yellowBright('No of Cases')]
         });
 
         table.push(
