@@ -23,7 +23,7 @@ A command-line interface to check the current statistics of COVID-19 of the worl
 3. Create a symlink of the repository in the global folder
 
    ```bash
-   npm link
+   sudo npm link
    ```
 
 ## USAGE
