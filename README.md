@@ -8,14 +8,14 @@ A command-line interface to check the current statistics of COVID-19 of the worl
 
 1.  [Getting Started](#getting-started)
 2.  [Usage](#usage)
-3.  [Contributing](#contributing")
+3.  [Contributing](#contributing)
 4.  [License](#license)
 
 ## Getting Started
 
-To get started with the CLI is very simple
+Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps given below,
 
-1.  You can choose to clone or download this repository.  
+1.  You can clone or download this repository.  
     To clone this repository, the command is  
 
     ```bash
