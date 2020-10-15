@@ -15,134 +15,89 @@ A command-line interface to check the current statistics of COVID-19 of the worl
 
 Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps given below,
 
-1.  You can clone or download this repository.  
-    To clone this repository, the command is  
+1.  Clone or download the repository using the command
 
     ```bash
     git clone https://github.com/dmahajan980/covid19.git
     ```
 
-2.   Now you need to install the dependencies. To do so, run the command
-      ```bash
-      npm install
-      ```
+2.  Install all the dependencies using the following command
 
-3.   The last step is to add a symbolic link to the global folder.  
-    If you are on Windows, start `cmd.exe` as Administrator and run the command
-      ```bash
-      npm link
-      ```
-      If you are on macOS/Linux, the command is
-      ```bash
-      sudo npm link
-      ```
+    ```bash
+    npm install
+    ```
 
-And we are ready to go!
+3.  Create a symlink of the repository in the global folder
+
+- Windows
+  If you are on Windows, start `cmd.exe` as Administrator and run the command
+
+  ```bash
+  npm link
+  ```
+
+- macO/Linux
+  If you are on macOS/Linux, the command is
+  ```bash
+  sudo npm link
+  ```
 
 ## Usage
 
 This CLI is very easy to use.
 
-*   **covid19**  
-    This is the name of the package that is used to invoke the CLI.  
-    Flags are available for this command.  
+- **`covid19`**  
+  This is the name of the package that is used to invoke the CLI.  
+  The following flag is supported.
 
-    <table style="height: 5px; width: 600px;" border="black">
+  |     Flag     | Alias |                Description                 |
+  | :----------: | :---: | :----------------------------------------: |
+  | `---version` | `-v`  | Display the current version of the program |
 
-    <tbody>
+  Example:
 
-    <tr style="border-color: black;">
+  ```bash
+  covid19 -v
+  ```
 
-    <td style="width: 150px; text-align: center; border-color: black;"><span style="text-decoration: underline;">flag</span></td>
+  ```bash
+  covid19 --version
+  ```
 
-    <td style="width: 150px; text-align: center; border-color: black;"><span style="text-decoration: underline;">alias</span></td>
+- **`covid19 stats`**  
+  This command returns the statistics of CoVID 19 all over the world.
 
-    <td style="width: 300px; text-align: center;  border-color: black;"><span style="text-decoration: underline;">description</span></td>
+  Example:
 
-    </tr>
+  ```bash
+  covid19 stats
+  ```
 
-    <tr>
+  The following flag is supported.
 
-    <td style="width: 150px; text-align: center; border-color: black;">--version</td>
+  |            Flag            |       Alias        |                 Description                 |
+  | :------------------------: | :----------------: | :-----------------------------------------: |
+  | `---country <countryName>` | `-c <countryName>` | Display statistics for a particular country |
 
-    <td style="width: 150px; text-align: center; border-color: black;">-v</td>
+  The supported formats for `countryName` are ISO2, ISO3 or a single-word name.
+  <br/>
+  A list of ISO Country Codes can be <a href="https://www.iban.com/country-codes" target="_blank">found here</a>.
 
-    <td style="width: 300px; text-align: center; border-color: black;">Display the current version of the program</td>
+  Example:
 
-    </tr>
+  ```bash
+  covid19 stats -c India
+  ```
 
-    </tbody>
+  ```bash
+  covid19 stats --country US
+  ```
 
-    </table>
-    <br/>
-
-    Example:
-    ```bash
-    covid19 -v
-    ```
-    OR
-    ```bash
-    covid19 --version
-    ```
-
-*   **covid19 stats**  
-    This command returns the statistics of CoVID 19 all over the world.
-
-    Example:
-    ```bash
-    covid19 stats
-    ```
-
-    Flags are available for this command.  
-
-    <table style="height: 5px; width: 600px;" border="black">
-
-    <tbody>
-
-    <tr style="border-color: black;">
-
-    <td style="width: 150px; text-align: center; border-color: black;"><span style="text-decoration: underline;">flag</span></td>
-
-    <td style="width: 150px; text-align: center; border-color: black;"><span style="text-decoration: underline;">alias</span></td>
-
-    <td style="width: 300px; text-align: center;  border-color: black;"><span style="text-decoration: underline;">description</span></td>
-
-    </tr>
-
-    <tr>
-
-    <td style="width: 150px; text-align: center; border-color: black;">--country<br/> &ltcountryName&gt</td>
-
-    <td style="width: 150px; text-align: center; border-color: black;">-c &ltcountryName&gt</td>
-
-    <td style="width: 300px; text-align: center; border-color: black;">Display statistics for a particular country</td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
-    <br/>
-    The supported formats for countryName are ISO2, ISO3 or a single-word name.
-    <br/>
-    A list of ISO Country Codes can be <a href="https://www.iban.com/country-codes" target="_blank">found here</a>
-    <br/><br/>
-
-    Example:
-    ```bash
-    covid19 stats --country india
-    ```
-    OR
-    ```bash
-    covid19 stats --country US
-    ```
-
-![example commands](readme-assets/example.gif)
+![example commands](assets/example.gif)
 
 ## Contributing
 
 Open an [issue](https://github.com/dmahajan980/covid19/issues) first to discuss potential changes/additions.
-
 
 ## License
 
