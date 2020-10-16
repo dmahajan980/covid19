@@ -6,42 +6,42 @@ A command-line interface to check the current statistics of COVID-19 of the worl
 
 ## Table of Contents
 
-1.  [Getting Started](#getting-started)
-2.  [Usage](#usage)
-3.  [Contributing](#contributing)
-4.  [License](#license)
+1. [Getting Started](#getting-started)
+2. [Usage](#usage)
+3. [Contributing](#contributing)
+4. [License](#license)
 
 ## Getting Started
 
 Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps given below.
 
-1.  Clone or download the repository using the command
+1. Clone or download the repository using the command
 
-    ```bash
-    git clone https://github.com/dmahajan980/covid19.git
-    ```
+   ```bash
+   git clone https://github.com/dmahajan980/covid19.git
+   ```
 
-2.  Install all the dependencies using the following command
+2. Install all the dependencies using the following command
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
-3.  Add a symbolic link to the global folder
+3. Add a symbolic link to the global folder
 
-    - **Windows**  
-      Open `cmd.exe` as Administrator and run the following command inside the root of the project directory
+   - **Windows**  
+     Open `cmd.exe` as Administrator and run the following command inside the root of the project directory
 
-      ```bash
-      npm link
-      ```
+     ```bash
+     npm link
+     ```
 
-    - **macOS/Linux**  
-      Open the terminal and run the following command inside the root of the project directory
+   - **macOS/Linux**  
+     Open the terminal and run the following command inside the root of the project directory
 
-      ```bash
-      sudo npm link
-      ```
+     ```bash
+     sudo npm link
+     ```
 
 ## Usage
 
