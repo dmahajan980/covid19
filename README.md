@@ -13,7 +13,7 @@ A command-line interface to check the current statistics of COVID-19 of the worl
 
 ## Getting Started
 
-Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps given below,
+Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps given below.
 
 1.  Clone or download the repository using the command
 
@@ -29,15 +29,15 @@ Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps gi
 
 3.  Create a symlink of the repository in the global folder
 
-- Windows
-  If you are on Windows, start `cmd.exe` as Administrator and run the command
+- **Windows**  
+  Open `cmd.exe` as Administrator and run the following command inside the root of the project directory
 
   ```bash
   npm link
   ```
 
-- macO/Linux
-  If you are on macOS/Linux, the command is
+- **macO/Linux**  
+  Open the terminal and run the following command inside the root of the project directory
   ```bash
   sudo npm link
   ```
@@ -46,52 +46,54 @@ Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps gi
 
 This CLI is very easy to use.
 
-- **`covid19`**  
-  This is the name of the package that is used to invoke the CLI.  
-  The following flag is supported.
+### `covid19`
 
-  |     Flag     | Alias |                Description                 |
-  | :----------: | :---: | :----------------------------------------: |
-  | `---version` | `-v`  | Display the current version of the program |
+This is the name of the package that is used to invoke the CLI.  
+ The following flag is supported.
 
-  Example:
+|    Flag     | Alias |                Description                 |
+| :---------: | :---: | :----------------------------------------: |
+| `--version` | `-v`  | Display the current version of the program |
 
-  ```bash
-  covid19 -v
-  ```
+Example:
 
-  ```bash
-  covid19 --version
-  ```
+```bash
+covid19 -v
+```
 
-- **`covid19 stats`**  
-  This command returns the statistics of CoVID 19 all over the world.
+```bash
+covid19 --version
+```
 
-  Example:
+### `covid19 stats`
 
-  ```bash
-  covid19 stats
-  ```
+This command returns the statistics of CoVID 19 all over the world.
 
-  The following flag is supported.
+Example:
 
-  |            Flag            |       Alias        |                 Description                 |
-  | :------------------------: | :----------------: | :-----------------------------------------: |
-  | `---country <countryName>` | `-c <countryName>` | Display statistics for a particular country |
+```bash
+covid19 stats
+```
 
-  The supported formats for `countryName` are ISO2, ISO3 or a single-word name.
-  <br/>
-  A list of ISO Country Codes can be <a href="https://www.iban.com/country-codes" target="_blank">found here</a>.
+The following flag is supported.
 
-  Example:
+|           Flag            |       Alias        |                 Description                 |
+| :-----------------------: | :----------------: | :-----------------------------------------: |
+| `--country <countryName>` | `-c <countryName>` | Display statistics for a particular country |
 
-  ```bash
-  covid19 stats -c India
-  ```
+The supported formats for `countryName` are ISO2, ISO3 or a single-word name.
+<br/>
+A list of ISO Country Codes can be <a href="https://www.iban.com/country-codes" target="_blank">found here</a>.
 
-  ```bash
-  covid19 stats --country US
-  ```
+Example:
+
+```bash
+covid19 stats -c India
+```
+
+```bash
+covid19 stats --country US
+```
 
 ![example commands](assets/example.gif)
 
