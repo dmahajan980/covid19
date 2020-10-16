@@ -27,20 +27,21 @@ Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps gi
     npm install
     ```
 
-3.  Create a symlink of the repository in the global folder
+3.  Add a symbolic link to the global folder
 
-- **Windows**  
-  Open `cmd.exe` as Administrator and run the following command inside the root of the project directory
+    - **Windows**  
+      Open `cmd.exe` as Administrator and run the following command inside the root of the project directory
 
-  ```bash
-  npm link
-  ```
+      ```bash
+      npm link
+      ```
 
-- **macO/Linux**  
-  Open the terminal and run the following command inside the root of the project directory
-  ```bash
-  sudo npm link
-  ```
+    - **macOS/Linux**  
+      Open the terminal and run the following command inside the root of the project directory
+
+      ```bash
+      sudo npm link
+      ```
 
 ## Usage
 
@@ -67,7 +68,7 @@ covid19 --version
 
 ### `covid19 stats`
 
-This command returns the statistics of CoVID 19 all over the world.
+This command returns the statistics of CoVID-19 all over the world.
 
 Example:
 
@@ -92,7 +93,7 @@ covid19 stats -c India
 ```
 
 ```bash
-covid19 stats --country US
+covid19 stats --country India
 ```
 
 ![example commands](assets/example.gif)
