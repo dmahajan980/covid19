@@ -1,5 +1,3 @@
-# CoVID-19 CLI
-
 ![CoVID-19 CLI](./assets/banner.png)
 
 [![NPM VERSION](http://img.shields.io/npm/v/covid-19.svg?style=flat&logo=npm)](https://www.npmjs.org/package/covid-19)
@@ -111,7 +109,9 @@ covid19 stats -c India
 covid19 stats --country India
 ```
 
-![example commands](assets/example.gif)
+<p align="center">
+   <img src="assets/example.gif" />
+</p>
 
 ## Contributing
 
