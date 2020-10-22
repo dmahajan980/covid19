@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/dmahajan980/covid19.git"
   },
-  "author": "Divyanshu Mahajan",
+  "author": "Divyanshu Mahajan <divyanshumahajan98@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dmahajan980/covid19/issues"
