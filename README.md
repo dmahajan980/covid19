@@ -1,27 +1,42 @@
 # CoVID-19 CLI
 
-<img src="https://badges.frapsoft.com/os/v1/open-source.png?v=103"> <a href="LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/dmahajan980/covid19"></a>
+![CoVID-19 CLI](./assets/banner.png)
 
-A command-line interface to check the current statistics of COVID-19 of the world or a particular country.
+[![NPM VERSION](http://img.shields.io/npm/v/covid-19.svg?style=flat&logo=npm)](https://www.npmjs.org/package/covid-19)
+[![GitHub license](https://img.shields.io/github/license/dmahajan980/covid19.svg?style=flat&logo=github)](https://github.com/dmahajan980/covid19/blob/master/LICENSE)
+[![npm collaborators](https://img.shields.io/npm/collaborators/covid-19.svg?logo=npm)](https://www.npmjs.com/package/covid-19)
+[![Snyk Vulnerabilities for npm package version](https://img.shields.io/snyk/vulnerabilities/npm/covid-19.svg?color=9cf&logo=snyk)](https://www.npmjs.com/package/covid-19)
+[![GitHub issues](https://img.shields.io/github/issues/dmahajan980/covid19.svg?logo=github)](https://www.npmjs.com/package/covid-19)
+
+A command-line interface that enables the users to see CoVID-19 statistics on their terminal or command prompt. It provides the
+flexibility to check global CoVID-19 statistics as well as statistics of a particular country or nation.
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
+1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Contributing](#contributing)
 4. [License](#license)
 
-## Getting Started
+## Installation
 
-Getting started with the CoVID-19 CLI is very simple. Kindly follow the steps given below.
+[![covid-19](http://img.shields.io/badge/npm-covid--19-red.svg?style=flat&logo=npm)](https://www.npmjs.com/package/covid-19)
 
-1. Clone or download the repository using the command
+The **CoVID-19 CLI** is available for free on [NPM](https://www.npmjs.com/package/covid-19).
+
+```bash
+npm install -g covid-19
+```
+
+The **CoVID-19 CLI** can also be installed using the source code on GitHub. Kindly follow the steps given below.
+
+1. Clone or download the repository
 
    ```bash
    git clone https://github.com/dmahajan980/covid19.git
    ```
 
-2. Install all the dependencies using the following command
+2. Install all the dependencies
 
    ```bash
    npm install
@@ -56,7 +71,7 @@ This is the name of the package that is used to invoke the CLI.
 | :---------: | :---: | :----------------------------------------: |
 | `--version` | `-v`  | Display the current version of the program |
 
-Example:
+**Example:**
 
 ```bash
 covid19 -v
@@ -70,7 +85,7 @@ covid19 --version
 
 This command returns the statistics of CoVID-19 all over the world.
 
-Example:
+**Example:**
 
 ```bash
 covid19 stats
@@ -86,7 +101,7 @@ The supported formats for `countryName` are ISO2, ISO3 or a single-word name.
 <br/>
 A list of ISO Country Codes can be <a href="https://www.iban.com/country-codes" target="_blank">found here</a>.
 
-Example:
+**Example:**
 
 ```bash
 covid19 stats -c India
@@ -100,7 +115,11 @@ covid19 stats --country India
 
 ## Contributing
 
-Open an [issue](https://github.com/dmahajan980/covid19/issues) first to discuss potential changes/additions.
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/dmahajan980)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/dmahajan980/covid19/pulls)
+
+Kindly go through the list of active [issues](https://github.com/dmahajan980/covid19/issues) or
+open a [new issue](https://github.com/dmahajan980/covid19/issues/new) to discuss potential changes/additions.
 
 ## License
 
