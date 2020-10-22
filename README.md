@@ -95,9 +95,9 @@ The following flag is supported.
 | :-----------------------: | :----------------: | :-----------------------------------------: |
 | `--country <countryName>` | `-c <countryName>` | Display statistics for a particular country |
 
-The supported formats for `countryName` are ISO2, ISO3 or a single-word name.
-<br/>
-A list of ISO Country Codes can be <a href="https://www.iban.com/country-codes" target="_blank">found here</a>.
+
+The supported formats for `countryName` are ISO2, ISO3 or a single-word name. A list of ISO Country Codes can be
+<a href="https://www.iban.com/country-codes" target="_blank">found here</a>.
 
 **Example:**
 
