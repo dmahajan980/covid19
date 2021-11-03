@@ -28,7 +28,7 @@
     "commander": "^5.0.0",
     "i18n-iso-countries": "^5.1.0",
     "request": "^2.88.2",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "js-beautify": "^1.10.3"
